@@ -14,9 +14,8 @@ Summary: Generates Rd files from R source code with comments. The main features 
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-inlinedocs-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-inlinedocs-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-inlinedocs-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-inlinedocs-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-inlinedocs-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-inlinedocs-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-inlinedocs-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-inlinedocs-feedstock)
 
 Current release info
 ====================
