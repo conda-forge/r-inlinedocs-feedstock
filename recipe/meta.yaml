@@ -1,5 +1,4 @@
-{% set version = '2013.9.3' %}
-
+{% set version = "2019.12.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -12,19 +11,18 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/inlinedocs_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/inlinedocs/inlinedocs_{{ version }}.tar.gz
-  sha256: 599135152779b26864c258e8d10144462a885ddfb5bbf2c376940f71d236738f
+  sha256: e3f373ed5bfdc7feed3d0025e386d9b9d6903367990c61e1e125e1f7b365a885
 
 build:
   noarch: generic
-  number: 1002
-
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
-requirements:
-  build:
-    - r-base
 
+requirements:
+  host:
+    - r-base
   run:
     - r-base
 
@@ -41,12 +39,11 @@ about:
     argument names are not repeated in comments, and (3) examples are defined in R code,
     not comments. It is also easy to define a new syntax.
   license_family: GPL3
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - dpryan79
-    - johanneskoester
-    - bgruening
-    - daler
     - jdblischak
