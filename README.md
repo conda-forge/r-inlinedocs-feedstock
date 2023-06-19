@@ -1,11 +1,11 @@
-About r-inlinedocs
-==================
+About r-inlinedocs-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-inlinedocs-feedstock/blob/main/LICENSE.txt)
 
 Home: http://inlinedocs.r-forge.r-project.org
 
 Package license: GPL-2 | GPL-3
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-inlinedocs-feedstock/blob/main/LICENSE.txt)
 
 Summary: Generates Rd files from R source code with comments. The main features of the default syntax are that (1) docs are defined in comments near the relevant code, (2) function argument names are not repeated in comments, and (3) examples are defined in R code, not comments. It is also easy to define a new syntax.
 
