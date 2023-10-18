@@ -1,4 +1,4 @@
-{% set version = "2019.12.5" %}
+{% set version = "2023.9.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,11 +11,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/inlinedocs_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/inlinedocs/inlinedocs_{{ version }}.tar.gz
-  sha256: e3f373ed5bfdc7feed3d0025e386d9b9d6903367990c61e1e125e1f7b365a885
+  sha256: 635a0e2619028ac5b07e11ea8c807dd7f9743e6eb52085ab584cc9eaccb3b584
 
 build:
   noarch: generic
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -34,10 +34,7 @@ test:
 about:
   home: http://inlinedocs.r-forge.r-project.org
   license: GPL-2 | GPL-3
-  summary: Generates Rd files from R source code with comments. The main features of the default
-    syntax are that (1) docs are defined in comments near the relevant code, (2) function
-    argument names are not repeated in comments, and (3) examples are defined in R code,
-    not comments. It is also easy to define a new syntax.
+  summary: Generates Rd files from R source code with comments. The main features of the default syntax are that (1) docs are defined in comments near the relevant code, (2) function argument names are not repeated in comments, and (3) examples are defined in R code, not comments. It is also easy to define a new syntax.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
